@@ -12,6 +12,11 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
+    "files": [
+        {
+          "output": "cliente/build"
+        }
+      ]
 
 }
