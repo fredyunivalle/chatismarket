@@ -1,19 +1,4 @@
-require('dotenv').config()
-const express = require('express')
-const path = require('path');
-const app = express()
-
-const port = process.env.PORT || 5000;
-
-const logger = require("morgan");
-const cors = require("cors");
-
-app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cors());
-
-const listTotal = [
+const list = [
     {
       id: 1,
       title: "My First Book of Pencil Control",
@@ -111,27 +96,5 @@ const listTotal = [
       amount: 1,
     },
   ];
-
-  app.disable('view cache');  
-
-app.get("/api/test", (req, res) => {
-  res.send("test");
-});
-
-app.get("/api/todoventa", (req ,res) =>{
-    res.send(listTotal)
-})
-
-
-const root = require('path').join(__dirname, './cliente/build')
-app.use(express.static(root));
-app.get("*", (req, res) => {
-    res.sendFile('index.html', { root });
-})
-
-
-
-
-app.listen(port, () => {
-    console.log(`APP listening on port ${port}`)
-  })  
+  
+  export default list;
