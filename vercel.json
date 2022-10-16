@@ -1,6 +1,7 @@
 {
     "version" : 2,
     "buildCommand": "npm run vercel-build",
+    "outputDirectory": "cliente/build",
     "builds" : [
         {
             "src": "./index.js",
@@ -12,11 +13,6 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ],
-    "files": [
-        {
-            "outputDirectory": "cliente/build"
-        }
-      ]
+    ]
 
 }
