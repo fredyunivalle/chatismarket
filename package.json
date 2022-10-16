@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node --watch index.js",
     "cliente": "npm start --prefix cliente",
-    "build": "npm install --prefix cliente && npm run build --prefix cliente"
+    "build": "npm install --prefix cliente && npm run build --prefix cliente",
+    "vercel-build": "npm install --prefix cliente && npm run build --prefix cliente"
   },
   "author": "Diana Rodriguez",
   "license": "ISC",
