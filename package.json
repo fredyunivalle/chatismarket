@@ -1,0 +1,17 @@
+{
+  "name": "supermark",
+  "version": "1.0.0",
+  "description": "Proyecto Supermercado",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js",
+    "cliente": "npm start --prefix cliente",
+    "build": "npm install --prefix cliente && npm run build --prefix cliente"
+  },
+  "author": "Diana Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
