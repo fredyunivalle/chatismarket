@@ -10,7 +10,7 @@ const Amazon = ({ handleClick }) => {
 
     useEffect( () => {
         const traeTodo = async () => {
-            const todo =  await axios.get('/api/todoventa');
+            const todo =  await axios.get('/api/traeinventario');
             console.log(todo)
             setlistaTotal(todo.data)
         } 
